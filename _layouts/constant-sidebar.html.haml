@@ -1,0 +1,26 @@
+---
+layout: base
+---
+.row
+  .span8
+    .main-text
+      ~ content
+
+  .offset1.span3
+    .hidden-phone
+      %img#logo{:src=>"/images/maxandersen.jpg"}
+    #flattr_button
+      = page.flattr_large_counter(:url=>"http://blog.xam.dk", 
+        :title=>"Max Rydahl Andersen", 
+        :tags=>"maxandersen,danish,oss,java,hibernate,jboss,eclipse,jbosstools")
+    
+    #microbio
+      :markdown
+        __Name:__ #{site.author}
+        __Bio tags:__ #{site.biotags}
+        __Employer:__ [JBoss](http://jboss.com] at Red Hat  
+        __Resume__: [LinkedIn](#{site.linkedin_url})  
+        __Team blog:__ [JBoss Tools](https://community.jboss.org/en/tools/blog)  
+        __Personal blog:__ [What was I thinking](/blog/)  
+        __Microblog:__ [Twitter](#{site.twitter_url})
+        __Geoloc:__ Le Coty, Switzerland
