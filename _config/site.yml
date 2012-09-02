@@ -9,6 +9,7 @@ profiles:
     base_url: http://xam.dk/test
     deploy:
       type: lftp
+      host: ftp.xam.dk
       path: /test
 
 google_analytics: UA-70032-1
