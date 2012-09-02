@@ -11,6 +11,7 @@ profiles:
       type: lftp
       host: ftp.xam.dk
       path: /test
+      user: xam.dk
 
 google_analytics: UA-70032-1
 flattr_username: maxandersen
