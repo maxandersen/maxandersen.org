@@ -6,7 +6,10 @@ profiles:
     disqus_developer: true
     dev: true
   production:
-    base_url: http://maxandersen.org/
+    base_url: http://xam.dk/test
+    deploy:
+      type: lftp
+      path: /test
 
 google_analytics: UA-70032-1
 flattr_username: maxandersen

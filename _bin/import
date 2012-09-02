@@ -118,6 +118,7 @@ class Importer
       end
     end
 
+    
     title    = item_xml.get_text( 'title' ).to_s
     author   = $globalauthor
     link     = item_xml.get_text( 'link' ).to_s
@@ -172,10 +173,15 @@ class Importer
         f.puts "author: '" + $globalauthor + "'"
         f.puts "layout: blog-post"
         f.puts "tags: [ #{tags.join(", ")} ]"
+        f.puts "orignallink: '#{link}'"
         f.puts '---'
         f.puts content
       end
     #end
+
+    puts "RewriteCond %{QUERY_STRING} ^" + link.match(/p=(.*)/)[0].to_s
+    puts "RewriteRule .* http://xam.dk/blog/" + slug
+
   end
 
   def import_images(content)

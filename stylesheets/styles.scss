@@ -15,6 +15,7 @@ $navbarLinkColorHover: #fff;
 //main elements
 body {
 	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	#font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size:105%;
 }
 
@@ -43,6 +44,9 @@ h1 {
 
 h1, h2, h3, h4, h5, strong {
 	color: $primaryDark;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style: italic;
+	font-weight: bold;
 }
 
 #footer {

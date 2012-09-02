@@ -14,7 +14,7 @@ tab: blog
           - if text
             = text.split(//).first(25).join() << "..."
           - else
-            = "WTF text blank!" << page.previous_post.date.strftime( '%Y-%m-%d' )
+            = "text blank!" << page.previous_post.date.strftime( '%Y-%m-%d' )
   - if page.next_post
     %li.next
       %a{:href=>page.next_post.url}
@@ -25,7 +25,7 @@ tab: blog
           - if text
             = text.split(//).first(25).join() << "..."
           - else
-            = "WTF text blank!" << "..."
+            = "text blank!" << "..."
         &rarr;
   
 %hr
