@@ -13,6 +13,7 @@ profiles:
       path: /test
       user: xam.dk
 
+config.output_dir: /tmp/xam.dk
 google_analytics: UA-70032-1
 flattr_username: maxandersen
 disqus: maxandersen
